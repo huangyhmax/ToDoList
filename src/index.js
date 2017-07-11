@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
 import registerServiceWorker from './registerServiceWorker';
+import Todopanel from './todolist'
 
-ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render(<Todopanel />, document.getElementById('container'));
 registerServiceWorker();
