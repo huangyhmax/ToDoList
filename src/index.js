@@ -2,7 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import registerServiceWorker from './registerServiceWorker';
-import Todopanel from './todolist'
+// import Todopanel from './todolist'
+import Todoaa from './todolist_new';
 
-ReactDOM.render(<Todopanel />, document.getElementById('container'));
+ReactDOM.render(<Todoaa />, document.getElementById('container'));
 registerServiceWorker();

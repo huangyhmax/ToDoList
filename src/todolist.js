@@ -38,7 +38,7 @@ class Todopanel extends Component{
                     <ul>
                          {listclass}
                     </ul>
-                    <div className="addlistclass">
+                    <div className="addlistclass" onClick={this.aaa.bind(this)}>
                         <div className="add">+</div>
                         Add ListClass
                     </div>
@@ -46,7 +46,7 @@ class Todopanel extends Component{
 
                 <section className="right hover">
                     <div className="right-top">
-                        <TodoInput content={this.state.newTodo}/>
+                        <TodoInput content={this.state.newTodo} onSubmit={this.addTodo.bind(this)}/>
                     </div>
                     <ul>
                         {todos}
@@ -57,6 +57,12 @@ class Todopanel extends Component{
                 </section> 
             </div>
         );
+    }
+    aaa(){
+        alert('hahaha');
+    }
+    addTodo(){
+        console.log(111);
     }
 }
 
