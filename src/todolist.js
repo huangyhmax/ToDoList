@@ -51,15 +51,12 @@ class Todopanel extends Component{
                     <ul>
                         {todos}
                     </ul>
-                    <div className="addlist"  onClick={this.testclick().bind(this)}>
+                    <div className="addlist">
                         <div className="add_">+</div>Add List
                     </div>
                 </section> 
             </div>
         );
-    }
-    testclick(){
-        alert('111');
     }
 }
 
