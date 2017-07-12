@@ -49,54 +49,7 @@ h3{
     position: relative;
     left: -36px;
 }
-.noteclass{
-    border:2px solid #323548;
-    /*background-color: #797d98;*/
-    margin: 8px 0;
-    width: 210px;
-    height: 40px;
-    border-radius: 20px 8px 8px 20px;
-    position: relative;
-    left: -12px;
-}
-.noteclass.active{
-   background-color: #323548;
-}
 
-.noteclass>.note-item{
-    width: 150px;
-    height: 40px;
-    border: none;
-    background-color: #b94430;
-    color: #fff;
-    position: relative;
-    left: -13px;
-    outline: none;
-}
-
-.noteclass>.note-item.active{
-   background-color: #323548;
-   color: #fff;
-}
-
-.left .addlistclass{
-    border:3px dotted #323548;
-    width: 180px;
-    height: 40px;
-    border-radius: 8px;
-    margin-left: 8px;
-    text-align: center;
-    cursor: pointer;
-    margin-top: 10px;
-}
-.addlistclass .add{
-    display: inline-block;
-    border: 2px dotted #fff;
-    width: 20px;
-    height: 20px;
-    border-radius: 10px;
-    margin: 8px;
-}
 .createnoteclass>.tips{
     font-size: 12px;
     line-height: 40px;
@@ -115,7 +68,24 @@ h3{
     border-bottom: 8px solid transparent;
     border-right: 8px solid transparent;
 }
-
+.left .addlistclass{
+    border:3px dotted #323548;
+    width: 180px;
+    height: 40px;
+    border-radius: 8px;
+    margin-left: 8px;
+    text-align: center;
+    cursor: pointer;
+    margin-top: 10px;
+}
+.addlistclass .add{
+    display: inline-block;
+    border: 2px dotted #fff;
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    margin: 8px;
+}
 .right{
     background-color: #EE7665;
     height: 75vh;
@@ -129,10 +99,11 @@ h3{
     display: block;
 }
 .right .suggetion{
+    font-size:20px;
     position: absolute;
-    top:15px;
-    right: 20px;
-    width: 600px;
+    top:20px;
+    right: 125px;
+    width: 450px;
     height: 40px;
     background-color: #fff;
     border-radius: 20px;
@@ -143,25 +114,7 @@ h3{
     border-bottom: 2px solid #e9583d;
     height: 80px;
 }
-.list-normal{
-    border-bottom: 2px solid #e9583d;
-    height: 50px;
-    width: 650px;
-    margin: 0 50px;
-    line-height: 50px;
-    text-align: left;
-    font-size: 20px;
-}
-.list-normal .notecontent{
-    width: 580px;
-    height: 40px;
-    border: none;
-    background-color: #b94430;
-    color: #fff;
-    outline: none;
-    border-radius: 2px;
 
-}
 .addlist{
     border: 4px dotted #323548;
     margin: 20px auto;

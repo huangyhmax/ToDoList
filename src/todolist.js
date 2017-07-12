@@ -1,8 +1,31 @@
 import React, {Component} from 'react';
-import './todolist.css'
+import './todolist.css';
+import Leftlist from './listclass';
+import TodoItem from './todoitem';
+import TodoInput from './todoinput';
+
 
 class Todopanel extends Component{
+    constructor(props){
+        super(props)
+        this.state = {
+            newTodo: 'test',
+            ListClass:['haha','haha','hello'],
+            todoList: [
+                {id:1, title:'第一个待办'},
+                {id:2, title:'第二个待办'},
+                {id:3, title:'第三个待办'},
+            ]
+        }
+    }
     render(){
+        let todos = this.state.todoList.map((item,index)=>{
+            return <TodoItem todo={item} />
+        })
+        let listclass=this.state.ListClass.map((item,index)=>{
+            //  console.log(item);
+            return <Leftlist lists={item}/> 
+        })
         return(
             <div>
                 <h3>To Do List</h3>
@@ -13,33 +36,30 @@ class Todopanel extends Component{
                         <div className="triangle"></div>
                     </div>
                     <ul>
-                        <li className="noteclass active">
-                            <input type="text" placeholder="Write list name." className="note-item active"/>
-                        </li>
+                         {listclass}
                     </ul>
                     <div className="addlistclass">
                         <div className="add">+</div>
                         Add ListClass
                     </div>
                 </section>
+
                 <section className="right hover">
                     <div className="right-top">
-                        <input type="text"  className="suggetion"/>
-                    </div>  
+                        <TodoInput content={this.state.newTodo}/>
+                    </div>
                     <ul>
-                        <li className="list-normal">
-                            <input type="text" placeholder="Write list-content." className="notecontent"/>
-                        </li>
-                        <li className="list-normal">
-                            hahah
-                        </li>
+                        {todos}
                     </ul>
-                    <div className="addlist">
+                    <div className="addlist"  onClick={this.testclick().bind(this)}>
                         <div className="add_">+</div>Add List
                     </div>
                 </section> 
             </div>
         );
+    }
+    testclick(){
+        alert('111');
     }
 }
 

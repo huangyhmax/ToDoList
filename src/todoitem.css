@@ -1,0 +1,18 @@
+.list-normal{
+    border-bottom: 2px solid #e9583d;
+    height: 50px;
+    width: 650px;
+    margin: 0 50px;
+    line-height: 50px;
+    text-align: left;
+    font-size: 20px;
+}
+.list-normal .notecontent{
+    width: 580px;
+    height: 40px;
+    border: none;
+    background-color: #b94430;
+    color: #fff;
+    outline: none;
+    border-radius: 2px;
+}
