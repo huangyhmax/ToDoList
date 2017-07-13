@@ -1,7 +1,8 @@
 {
-  "main.css": "static/css/main.d9f4298c.css",
-  "main.css.map": "static/css/main.d9f4298c.css.map",
-  "main.js": "static/js/main.ba86a84d.js",
-  "main.js.map": "static/js/main.ba86a84d.js.map",
-  "static\\media\\clipboard.svg": "static/media/clipboard.406ec4fe.svg"
+  "main.css": "static/css/main.de945a2c.css",
+  "main.css.map": "static/css/main.de945a2c.css.map",
+  "main.js": "static/js/main.e4d8d0f8.js",
+  "main.js.map": "static/js/main.e4d8d0f8.js.map",
+  "static\\media\\clipboard.svg": "static/media/clipboard.406ec4fe.svg",
+  "static\\media\\retina.svg": "static/media/retina.0fc829ee.svg"
 }
