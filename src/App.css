@@ -92,6 +92,7 @@ h3 .loginout{
     border-radius: 20px 8px 8px 20px;
     position: relative;
     left: -12px;
+    line-height: 40px;
 }
 .noteclass.active{
    background-color: #323548;
@@ -106,6 +107,7 @@ h3 .loginout{
     position: relative;
     left: -13px;
     outline: none;
+    
 }
 
 .noteclass>.note-item.active{
@@ -161,7 +163,7 @@ h3 .loginout{
 }
 
 .right .suggetion{
-    font-size:20px;
+    font-size:18px;
     position: absolute;
     top:20px;
     right: 125px;
@@ -187,9 +189,14 @@ h3 .loginout{
     width: 25px;
     height: 25px;
     vertical-align: middle;
-    position: relative;
-    left: -2px;
     margin-right: 5px;
+}
+.list-normal .del{
+    width: 25px;
+    vertical-align: middle;
+    margin-left: 16px;
+    cursor: pointer;
+    color: #fff;
 }
 .list-normal .notecontent{
     width: 580px;
@@ -199,7 +206,9 @@ h3 .loginout{
     color: #fff;
     outline: none;
     border-radius: 2px;
-
+    font-size: 16px;
+    position: relative;
+    left: 6px;
 }
 .addlist{
     border: 4px dotted #323548;

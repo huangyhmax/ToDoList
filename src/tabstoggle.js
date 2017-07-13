@@ -8,6 +8,7 @@ class Tabstoggle extends Component{
     constructor(props){
         super(props);
         this.state={
+            num:0,
             add:'false',
             user: getCurrentUser() ||{},
             currentIndex:0,
@@ -29,8 +30,8 @@ class Tabstoggle extends Component{
                     <nav  className="left">
                         <div className="createnoteclass">
                             <img src={logo} className="menu"/>
-                            
-                            <span className="tips">(4/4 messages)</span>
+                            {this.messagsnum.bind(this)}
+                            <span className="tips">{this.state.num} messages</span>
                             <div className="triangle"></div>
                         </div>
                         <ul>
@@ -77,7 +78,11 @@ class Tabstoggle extends Component{
         this.setState({
             currentIndex: index
         })
+        console.log('good'+this.state.currentIndex);
+        var indexnow=this.state.currentIndex;
+        this.props.callbackParent(indexnow);
     }
+    
     addTitleClass(index){
         return index==this.state.currentIndex?'noteclass active':'noteclass';
     }
@@ -121,6 +126,21 @@ class Tabstoggle extends Component{
     changeTitle(e){
         this.props.changevalue(e)
     }
+    messagsnum(){
+        // let stateCopy = JSON.parse(JSON.stringify(this.state)) 
+        // stateCopy.num = this.props.message
+        // this.setState(
+        //     numthis.props.message
+        // )
+        this.setState({
+            num: this.props.message
+        })
+    }
 }
 
 export default Tabstoggle;
+
+// export function getindex(){
+//     let indexnow=this.state.currentIndex;
+//     console.log(indexnow);
+// }
