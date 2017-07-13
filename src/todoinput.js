@@ -2,12 +2,10 @@ import React, { Component } from 'react';
 
 export default class TodoInput extends Component{
     render(){
-        return <input type="text"  className="suggetion" value={this.props.content}
-        onKeyPress={this.submit.bind(this)}/>
-    }
-    submit(e){
-        if(e.key === 'Enter'){
-            this.props.onSubmit(e)
-        }
+       return(
+           <div className="right-top">
+                <input type="text"  className="suggetion"/>
+           </div>
+         )
     }
 }

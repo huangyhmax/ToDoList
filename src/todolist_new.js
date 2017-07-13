@@ -32,7 +32,7 @@ export default class Todoaa extends React.Component{
     constructor(props){
         super(props)
         this.state={
-            listclass:['blue','haha','wow'],
+            // listclass:['blue','haha','wow'],
             todoList:[
                 {blue:[{title:'aa',cc:'aav'},{title:'ff',cc:'ee'}]},
                 {haha:[{title:'aay',cc:'aavy'},{title:'ffi',cc:'eei'}]},
@@ -65,6 +65,12 @@ export default class Todoaa extends React.Component{
             <Todonew>
                 {lis}
             </Todonew>
+            // <Todonew>
+            //     <section name='red'>我是红色</section>
+            //     <section name='blue'>我是蓝色</section>
+            //     <section name='yellow'>我是黄色</section>
+            //     <section name='green'>我是绿色</section>
+            // </Todonew>
          )
     }
 }

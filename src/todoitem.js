@@ -1,18 +1,25 @@
 
 
 import React, { Component } from 'react';
-import './todoitem.css';
+import TodoInput from './todoinput';
 
 export default class TodoItem extends Component {
   render(){
     return (
-        <li className="list-normal">
-            <input type="text" 
-            placeholder="Write list-content." 
-            className="notecontent" 
-            value={this.props.todo.title}/>
-        </li>
+        <div>
+            {React.Children.map(this.props.children,
+            (element,index)=>(
+                <div className={this.addPanelClass(index)}>
+                    <TodoInput />  
+                    <ul>
+                        <li className="list-normal">
+                            {element}
+                        </li>
+                    </ul>
+                </div>
+                )
+            )}
+        </div>
     )
-    
   }
 }

@@ -1,24 +1,202 @@
-.App {
-  text-align: center;
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+body{
+    background-color: #323548;
+}
+#container{
+    width:1000px;
+    margin: 30px auto;
+    height: 90vh;
+    background-color: #e8573c;
+    color: #fff;
+    border-radius: 20px;
+    text-align: center;
+    position: relative;
+}
+h3{
+    font-size: 30px;
+    font-weight: bold;
+    line-height:60px;
+}
+h3 .loginout{
+    vertical-align: middle;
+    width: 90px;
+    height: 35px;
+    border: 3px dotted #323548;
+    background-color: transparent;
+    color: #fff;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 6px;
+    /* padding: 8px 8px 8px 8px; */
+    line-height: 35px;
+    position: absolute;
+    right: 50px;
+    cursor: pointer;
+    outline: none;
+    top: 15px;
+}
+.left{
+    background-color: #b94430;
+    float: left;
+    width: 200px;
+    height: 75vh;
+    position: absolute;
+    top: 70px;
+    left: 45px;
+    border-radius: 20px 0 0 20px;
 }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
+.createnoteclass{
+    background-color: #873424;
+    height:40px;
+    width: 100%;
+}
+.createnoteclass .menu{
+    display: inline-block;
+    background-color: #323548;
+    width: 40px;
+    height: 40px;
+    position: relative;
+    left: -36px;
+}
+.createnoteclass>.tips{
+    font-size: 12px;
+    line-height: 40px;
+    display: inline-block;
+    top: -16px;
+    position: relative;
+}
+.createnoteclass .triangle{
+    width: 0px;
+    height: 0px;
+    position: relative;
+    left: 178px;
+    top: -40px;
+    border-top: 8px solid #fff;
+    border-left: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+    border-right: 8px solid transparent;
+}
+.noteclass{
+    border:2px solid #323548;
+    /*background-color: #797d98;*/
+    margin: 8px 0;
+    width: 210px;
+    height: 40px;
+    border-radius: 20px 8px 8px 20px;
+    position: relative;
+    left: -12px;
+}
+.noteclass.active{
+   background-color: #323548;
 }
 
-.App-intro {
-  font-size: large;
+.noteclass>.note-item{
+    width: 150px;
+    height: 40px;
+    border: none;
+    background-color: #b94430;
+    color: #fff;
+    position: relative;
+    left: -13px;
+    outline: none;
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+.noteclass>.note-item.active{
+   background-color: #323548;
+   color: #fff;
+}
+
+.left .addlistclass{
+    border:3px dotted #323548;
+    width: 180px;
+    height: 40px;
+    border-radius: 8px;
+    margin-left: 8px;
+    text-align: center;
+    cursor: pointer;
+    margin-top: 10px;
+}
+.addlistclass .add{
+    display: inline-block;
+    border: 2px dotted #fff;
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    margin: 8px;
+}
+
+.right{
+    background-color: #EE7665;
+    height: 75vh;
+    width: 700px;
+    position: absolute;
+    top: 70px;
+    right:45px;
+    display:none;
+}
+.right.hover{
+    display: block;
+}
+.right-top{
+    border-bottom: 2px solid #e9583d;
+    height: 80px;
+}
+
+.right .suggetion{
+    font-size:20px;
+    position: absolute;
+    top:20px;
+    right: 125px;
+    width: 450px;
+    height: 40px;
+    background-color: #fff;
+    border-radius: 20px;
+    outline: none;
+    border:none;
+}
+
+.list-normal{
+    border-bottom: 2px solid #e9583d;
+    height: 50px;
+    width: 650px;
+    margin: 0 50px;
+    line-height: 50px;
+    text-align: left;
+    font-size: 20px;
+}
+.list-normal .notecontent{
+    width: 580px;
+    height: 40px;
+    border: none;
+    background-color: #b94430;
+    color: #fff;
+    outline: none;
+    border-radius: 2px;
+
+}
+.addlist{
+    border: 4px dotted #323548;
+    margin: 20px auto;
+    width: 180px;
+    height: 20px;
+    padding: 10px 0px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.addlist .add_{
+    display: inline-block;
+    border: 2px dotted #fff;
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    margin-right: 8px;
+   
 }
