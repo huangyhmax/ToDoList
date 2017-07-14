@@ -30,9 +30,10 @@ class Tabstoggle extends Component{
                     <nav  className="left">
                         <div className="createnoteclass">
                             <img src={logo} className="menu"/>
-                            {this.messagsnum.bind(this)}
-                            <span className="tips">{this.state.num} messages</span>
-                            <div className="triangle"></div>
+                            {/*<span className="tips" onClick={this.props.message}>{this.state.num} messages</span>*/}
+                            <lable className="lab">
+                            <input className="classnum" value={this.props.message}/> ListClass
+                            </lable>
                         </div>
                         <ul>
                             {React.Children.map(this.props.children,
@@ -125,16 +126,6 @@ class Tabstoggle extends Component{
     }
     changeTitle(e){
         this.props.changevalue(e)
-    }
-    messagsnum(){
-        // let stateCopy = JSON.parse(JSON.stringify(this.state)) 
-        // stateCopy.num = this.props.message
-        // this.setState(
-        //     numthis.props.message
-        // )
-        this.setState({
-            num: this.props.message
-        })
     }
 }
 
