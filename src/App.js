@@ -17,11 +17,11 @@ export default class Todoaa extends React.Component{
             newTodo:'',
             todoList:[
                 
-                {haha:[{title:'haha',status:'completed',deleted:false},{title:'haha',status:'completed',deleted:false}]},
-                {good:[{title:'good',status:'completed',deleted:false},{title:'good',status:'completed',deleted:false}]},
-                {hello:[{title:'hello',status:'completed',deleted:false},{title:'hello',status:'completed',deleted:false}]},
-                {world:[{title:'world',status:'completed',deleted:false},{title:'world',status:'completed',deleted:false}]},
-                {awsome:[{title:'awsome',status:'completed',deleted:false},{title:'awsome',status:'completed',deleted:false}]},
+                // {haha:[{title:'haha',status:'completed',deleted:false},{title:'haha',status:'completed',deleted:false}]},
+                // {good:[{title:'good',status:'completed',deleted:false},{title:'good',status:'completed',deleted:false}]},
+                // {hello:[{title:'hello',status:'completed',deleted:false},{title:'hello',status:'completed',deleted:false}]},
+                // {world:[{title:'world',status:'completed',deleted:false},{title:'world',status:'completed',deleted:false}]},
+                // {awsome:[{title:'awsome',status:'completed',deleted:false},{title:'awsome',status:'completed',deleted:false}]},
             ]
 
             // todoList:[

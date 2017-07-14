@@ -65,9 +65,7 @@ class Tabstoggle extends Component{
                             </div>
                             )
                         )}
-                        <div className="addlist">
-                            <div className="add_"></div>Add List
-                        </div>
+                        {/*<div className="right hover"></div>*/}
                     </div>
                 </section>
                 {this.state.user.id ? null : <UserDialog onSignUp={this.onSignUpSignIn.bind(this)} onSignIn={this.onSignUpSignIn.bind(this)}/>}
